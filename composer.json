@@ -1,0 +1,22 @@
+{
+  "name": "bim/license-key",
+  "description": "Library for validation license key.",
+  "version": "1.0.0",
+  "license": [
+    "Commercial BIM Software License 1.0, https://www.bimproject.net/bim-license-v1.0.txt"
+  ],
+  "authors": [
+    {
+      "name": "Kyrylo Kostiukov",
+      "homepage": "https://www.bimprojec.net/"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LicenseKey\\": "src/"
+    }
+  }
+}
