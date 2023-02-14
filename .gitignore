@@ -2,3 +2,4 @@ vendor
 .idea
 /tmp/
 .vscode
+/composer.lock

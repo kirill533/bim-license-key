@@ -67,7 +67,6 @@ class LicenseKey
      * @param string  $platform
      * @param string  $software
      * @param string  $software_version
-     * @return string
      * @throws Exception\LicenseDomainException
      * @throws Exception\LicenseExpiredException
      * @throws Exception\LicenseKeyInvalidException
@@ -100,7 +99,5 @@ class LicenseKey
 
         $key = new Key($software, $key);
         $key->validate($domain, $platform, $software_version);
-
-        return 'License is valid.';
     }
 }

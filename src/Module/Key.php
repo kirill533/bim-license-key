@@ -19,14 +19,6 @@ use LicenseKey\Exception\LicenseKeyMalformedException;
 
 class Key
 {
-    const LICENSE_TYPE_TERM = 'term';
-    const LICENSE_TYPE_DEMO = 'trial';
-    const LICENSE_TYPE_PERPETUAL = 'perpetual';
-
-    const PLATFORM_MAGE_1 = 'M1';
-    const PLATFORM_MAGE_2 = 'M2';
-    const PLATFORM_PAWBO = 'pawbo';
-
     /**
      * @var VersionInterface
      */
@@ -275,7 +267,7 @@ class Key
      */
     public function isExpired()
     {
-        if ($this->getLicenseType() == self::LICENSE_TYPE_PERPETUAL) {
+        if ($this->getLicenseType() == 'perpetual') {
             return false;
         }
 
@@ -290,7 +282,7 @@ class Key
      */
     public function isExpiredAfterTwoWeeks()
     {
-        if ($this->getLicenseType() == self::LICENSE_TYPE_PERPETUAL) {
+        if ($this->getLicenseType() == 'perpetual') {
             return false;
         }
 
